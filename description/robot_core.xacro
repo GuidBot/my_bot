@@ -47,11 +47,25 @@
             </geometry>
             <material name="white"/>
         </visual>
+        <visual>
+            <origin xyz="0.225 0 0.8"/>
+            <geometry>
+                <cylinder radius="0.08" length="1.5"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
         <collision>
             <origin xyz="0.225 0 0.05" rpy="0 0 0"/>
             <geometry>
                 <box size="0.45 0.4 0.1"/>
             </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0.225 0 0.8"/>
+            <geometry>
+                <cylinder radius="0.08" length="1.5"/>
+            </geometry>
+            <material name="white"/>
         </collision>
         <xacro:inertial_box mass="12" x="0.45" y="0.4" z="0.1">
             <origin xyz="0.225 0 0.05" rpy="0 0 0"/>
@@ -80,7 +94,7 @@
         </visual>
         <collision>
             <geometry>
-                <cylinder length="0.06" radius="0.065" />
+                <sphere radius="0.065" />
             </geometry>
         </collision>
         <xacro:inertial_cylinder mass="0.3" length="0.06" radius="0.065">
@@ -112,7 +126,7 @@
         </visual>
         <collision>
             <geometry>
-                <cylinder length="0.06" radius="0.065" />
+                <sphere radius="0.065" />
             </geometry>
         </collision>
         <xacro:inertial_cylinder mass="0.3" length="0.06" radius="0.065">
